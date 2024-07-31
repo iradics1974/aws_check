@@ -1,7 +1,8 @@
 pipeline {
-    agent {
-        label 'ja01'  // Specify the agent by its label or name
-    }
+    agent any
+    # agent {
+    #    label 'ja01'  // Specify the agent by its label or name
+    # }
     
     stages {
         stage('Check AWS CLI Version') {
